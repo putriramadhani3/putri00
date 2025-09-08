@@ -344,6 +344,7 @@
       <p id="produkDipilih"></p>
       <input type="text" id="nama" placeholder="Nama Anda"><br>
       <input type="email" id="email" placeholder="Email Anda"><br>
+      <input type="telepon" id="telepon" placeholder="telepon Anda"><br>
       <button class="btn" onclick="kirimForm()">Konfirmasi</button>
     </div>
   </div>
@@ -364,9 +365,11 @@
     function kirimForm() {
       let nama = document.getElementById("nama").value;
       let email = document.getElementById("email").value;
+       let telepon = document.getElementById("telepon").value;
 
+      
       if (nama && email) {
-        alert("Terima kasih " + nama + "!\nAnda membeli " + produkDipilih + ".\nKonfirmasi akan dikirim ke: " + email);
+        alert("Terima kasih " + nama + "!\nAnda membeli " + produkDipilih + ".\nKonfirmasi akan dikirim ke: " + email +".\natau" + telepon);
         tutupPopup();
       } else {
         alert("Harap isi semua data!");
@@ -383,6 +386,7 @@
   </script>
   </body>
 </html>
+
 
 
 
